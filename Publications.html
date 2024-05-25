@@ -32,6 +32,16 @@
         color: #fff; /* Choose your desired text color */
         padding: 0.3rem 0.5rem; /* Adjust padding as needed */
         border-radius: 0.25rem; /* Adjust border radius as needed */}
+        /* Media query for mobile screens */
+        @media (max-width: 768px) {
+            .sidebar { width: 100%; position: relative; height: auto; border-right: none; }
+            .content { padding-left: 20px; }
+            .navbar { margin-left: 0; }
+            .navbar-brand { padding-right: 10px; }
+            .navbar-nav { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+            .navbar-nav .nav-item { margin-right: 20px; margin-bottom: 10px; }
+            .container { flex-direction: column; }
+        }
     </style>
 </head>
 <body>
