@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <style>
         body { font-family: Arial, sans-serif; padding-top: 70px;}
-        .navbar { margin-bottom: 20px; text-align: center; margin-left: -140px; position: fixed;top: 0;width: 100%; z-index: 1000;}
+        .navbar { margin-bottom: 20px; text-align: center; margin-left: 0; position: fixed;top: 0;width: 100%; z-index: 1000;}
         .navbar-brand { font-size: 1.5rem; }
         .navbar-nav .nav-item { margin-right: 50px; }
         .navbar-nav .nav-link { font-size: 1.2rem; }
@@ -53,15 +53,16 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <div style="display: flex; justify-content: center; width: 100%;">
-                <div class="navbar-brand" style="font-size: 1.4rem;">Hongbo Li's Homepage</div>
-                <ul class="navbar-nav">
+            <a class="navbar-brand d-none d-lg-block">Hongbo Li's Homepage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./hongbo_resources/HongboLi_CV.pdf">CV</a></li>
                     <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="Professional.html">Professional Services</a></li>
-<!--                     <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
                 </ul>
             </div>
         </div>
