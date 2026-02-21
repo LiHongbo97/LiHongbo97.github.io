@@ -3,236 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hongbo Li</title>
+    <title>Hongbo Li — Postdoctoral Scholar</title>
     <link rel="icon" href="https://lihongbo97.github.io/hongbo_resources/Li_logo.png">
     <link rel="shortcut icon" href="https://lihongbo97.github.io/hongbo_resources/Li_logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <style>
-        body { font-family: Arial, sans-serif; padding-top: 70px;}
-        .navbar { margin-bottom: 20px; text-align: center; margin-left: 0; position: fixed;top: 0;width: 100%; z-index: 1000;}
-        .navbar-brand { font-size: 1.5rem; }
-        .navbar-nav .nav-item { margin-right: 50px; }
-        .navbar-nav .nav-link { font-size: 1.2rem; }
-	.nav-item .nav-link {
-            position: relative;
-            display: inline-block;
-            padding: 10px 15px;
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .nav-item .nav-link:hover {
-            color: #0056b3;
-        }
-
-        .nav-item .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #0056b3;
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-out;
-        }
-
-        .nav-item .nav-link:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-        .container { display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding-right: 0; }
-        .sidebar { width: 250px; padding: 20px; border-right: 1px solid #ddd; font-size: 0.875rem; line-height: 1.2; position: fixed; height: 100%; overflow-y: auto; }
-        .sidebar img { width: 100%; border-radius: 50%; margin-bottom: 15px; }
-        .sidebar p { margin: 5px 0; }
-        .sidebar .icon-text { display: flex; align-items: center; margin-bottom: 5px; }
-        .sidebar .icon-text i { margin-right: 13px; }
-        .content { flex: 1; padding: 20px; padding-left: 290px; font-size: 1.1rem;}
-        .header { text-align: center; margin-bottom: 40px; }
-        .section { margin-bottom: 40px; }
-        .social-icons { display: flex; flex-direction: column; align-items: flex-start; }
-        .social-icons a { margin-bottom: 10px; color: #333; text-decoration: none; font-size: 0.875rem; }
-        .social-icons a:hover { color: #0056b3; }
-        .social-icons i { margin-right: 10px; }
-        .badge { font-size: 0.875rem; background-color: #1E90FF; color: #fff; padding: 0.3rem 0.5rem; border-radius: 0.25rem; }
-	.footer {
-            background-color: #f8f9fa; /* Light grey background */
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            border-top: 1px solid #eaeaea; /* Light border on top */
-            font-size: 0.875rem; /* Adjust font size as needed */
-            color: #6c757d; /* Light grey text color */
-        }
-
-        .footer .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer p {
-            margin: 0;
-        }
-        /* Media query for mobile screens */
-        @media (max-width: 768px) {
-            body {
-                padding-top: 56px; /* Adjust this value based on your navbar height */
-            }
-            .navbar {
-                margin-left: 0;
-            }
-            .sidebar {
-                width: 100%;
-                position: relative;
-                height: auto;
-                border-right: none;
-                border-bottom: 1px solid #ddd;
-            }
-            .content {
-                padding-left: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand d-none d-lg-block">Hongbo Li's Homepage</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./hongbo_resources/HongboLi_CV.pdf">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Professional.html">Professional Services</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="sidebar" style="margin-top: 0;">
-            <img src="./hongbo_resources/photo1.jpg" alt="Your Name">
-            <div class="icon-text">
-                <i class="fas fa-map-marker-alt"></i>
-                <p> Columbus, OH </p>
-            </div>
-            <div class="icon-text">
-                <i class="fas fa-university"></i>
-                <p> The Ohio State University</p>
-            </div>
-	    <div class="icon-text">
-                <i class="fas fa-envelope"></i>
-                <p> li.15242@osu.edu</p>
-            </div>
-            <div class="social-icons">
-                <a href="https://scholar.google.com/citations?user=tCrp2KsAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
-            </div>
-			<div class="social-icons">
-                <a href="https://www.linkedin.com/in/hongbo-li/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>  Linkedin</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/LiHongbo97" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-        </div>
-        <div class="content">
-            <script>
-                window.onload = function() {
-                    window.scrollTo(0, 0);
-                };
-            </script>
-            <div class="header">
-                <h1>Hongbo Li</h1>
-                <!-- <p>PhD Candidate</p> -->
-            </div>
-            <div id="about" class="section">
-                <h2>About Me</h2>
-                <p>I am a Postdoctoral Scholar at <a href="https://aiedge.osu.edu" target="blank">NSF AI-EDGE Institute</a>, The Ohio State University, 
-			advised by Prof. <a href="https://u.osu.edu/shroff-11/" target="blank">Ness B. Shroff</a> and 
-			Prof. <a href="https://sites.google.com/view/yingbinliang/home" target="blank">Yingbin Liang</a>. 
-			I earned my Ph.D. from Singapore University of Technology and Design (SUTD) in Jul 2024 and received my B.Sc. Degree from Shanghai Jiao Tong University (SJTU) in Jun 2019. </p>
 
-            </div>
-            <div id="research" class="section">
-                <h2>Research Interests</h2>
-                <ul>
-								<li><p>Machine Learning Theory<br>
-								</li>
-								<li><p>Machine Learning for Networking<br>
-								</li>
-								<li><p>Game Theory and Mechanism Design<br>
-								</li>
-								<li><p>Multi-agent Learning<br>
-								</li>
-								</ul>
-            </div>
-            <div id="news" class="section">
-                <h2>Recent News</h2>
-                <ul>				
-								<li><p>[Oct 2025] One paper has been accepted by <b><font color="red">IEEE TON</font></b>.
-								</p></li>
-								<li><p>[Jul 2025] One paper has been accepted by <b><font color="red">ACM MobiHoc'25</font></b>.
-								</p></li>
-								<li><p>[Jul 2025] I will server as a Program Committee member of <b><font color="red">AAAI'26</font></b>.
-								</p></li>
-								<li><p>[Mar 2025] One paper has been accepted by <b><font color="red">IEEE TMC</font></b>.
-								</p></li>
-								<li><p>[Jan 2025] One paper has been accepted by <b><font color="red">ICLR'25 (Spotlight)</font></b>.
-								</p></li>
-								<li><p>[Jan 2025] One paper has been accepted by <b><font color="red">IEEE TON</font></b>.
-								</p></li>
-								<li><p>[Dec 2024] Invited talk at Sun Yat-Sen University. <a class="badge badge-success" href="./hongbo_resources/Talk_1217SYSU.pdf">Slides</a>
-								</p></li>
-								<li><p>[Dec 2024] One paper has been accepted by <b><font color="red">INFOCOM'25</font></b>.
-								</p></li>
-								<li><p>[Nov 2024] One paper has been accepted by <b><font color="red">IEEE TMC</font></b>.
-								</p></li>
-								<li><p>[Jul 2024] I have passed my PhD oral defense.
-								</p></li>
-								<li><p>[Apr 2024] One paper has been accepted by <b><font color="red">IEEE TMC</font></b>.
-								</p></li>
-								<li><p>[Apr 2024] One paper has been accepted by <b><font color="red">ISIT'24</font></b>.
-								</p></li>
-								<li><p>[Apr 2023] Invited talk at IWIN-FINS Lab, SJTU. <a class="badge badge-success" href="./hongbo_resources/SJTU_Talk.pdf">Slides</a>
-								</p></li>
-								<li><p>[Feb 2023] Oral presentation at AAAI'23. <a class="badge badge-success" href="./hongbo_resources/AAAI_3044_Slides.pdf">Slides</a>
-								</p></li>
-								<li><p>[Nov 2022] One paper has been accepted by <b><font color="red">AAAI'23 (Oral)</font></b>.
-								</p></li>
-								<li><p>[Oct 2022] One paper has been accepted by <b><font color="red">IEEE TNSE</font></b>.
-								</p></li>
-								</ul>
-            </div>
-            <div id="awards" class="section">
-                <h2>Awards</h2>
-                <ul>
-								<li><p>IEEE ISIT Student Travel Grant, 2024.</p></li>
-								<li><p>SUTD PhD Fellowship, 2020.</p></li>
-								<li><p>Outstanding Graduate of Shanghai, SJTU (Top 2%), 2019.</p></li>
-<!-- 								<li><p>Student of the Year (Nomination Award), SJTU (Top 15/40000), 2017.</p></li> -->
-								</ul>
-            </div>
-            <div id="contact" class="section">
-                <h2>Contact me</h2>
-                <ul>
-								<li><p>Email: li.15242@osu.edu</p></li>
-								<li><p>Office: Dreese Lab 655, 2015 Neil Ave, Columbus, OH 43210</p></li>
-								</ul>
+<!-- ── TOP NAV ──────────────────────────────────────────── -->
+<nav class="topnav">
+    <a href="index.html" class="active">About</a>
+    <a href="./hongbo_resources/HongboLi_CV.pdf" target="_blank">CV</a>
+    <a href="Publications.html">Publications</a>
+    <a href="Professional.html">Professional</a>
+</nav>
+
+<div class="page-wrapper">
+
+<!-- ── SIDEBAR ──────────────────────────────────────────── -->
+<aside class="sidebar">
+    <img class="sidebar-photo" src="./hongbo_resources/photo1.jpg" alt="Hongbo Li">
+    <h2 class="sidebar-name">Hongbo Li</h2>
+    <p class="sidebar-role">Postdoctoral Scholar<br>The Ohio State University</p>
+    <hr class="sidebar-hr">
+    <ul class="sidebar-meta">
+        <li><i class="fas fa-map-marker-alt"></i> Columbus, OH</li>
+        <li><i class="fas fa-university"></i> NSF AI-EDGE Institute, OSU</li>
+        <li><i class="fas fa-envelope"></i> li.15242@osu.edu</li>
+    </ul>
+    <ul class="sidebar-links">
+        <li><a href="https://scholar.google.com/citations?user=tCrp2KsAAAAJ&hl=en" target="_blank">
+            <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/hongbo-li/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a></li>
+        <li><a href="https://github.com/LiHongbo97" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a></li>
+    </ul>
+</aside>
+
+<!-- ── MAIN ─────────────────────────────────────────────── -->
+<main class="main">
+    <div class="content">
+
+        <div class="page-title">
+            <h1>Hongbo Li</h1>
+            <p class="tagline">Postdoctoral Scholar · Machine Learning &amp; Networking</p>
+        </div>
+
+        <!-- About -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p class="about-p">
+                I am a Postdoctoral Scholar at the
+                <a href="https://aiedge.osu.edu" target="_blank">NSF AI-EDGE Institute</a>,
+                The Ohio State University, advised by
+                Prof.&nbsp;<a href="https://u.osu.edu/shroff-11/" target="_blank">Ness B. Shroff</a>
+                and Prof.&nbsp;<a href="https://sites.google.com/view/yingbinliang/home" target="_blank">Yingbin Liang</a>.
+                I earned my Ph.D. from Singapore University of Technology and Design (SUTD) in Jul 2024
+                and received my B.Sc. from Shanghai Jiao Tong University (SJTU) in Jun 2019.
+            </p>
+        </div>
+
+        <!-- Research Interests -->
+        <div class="section">
+            <h2>Research Interests</h2>
+            <div class="research-tags">
+                <span class="rtag"><span class="dot"></span>Machine Learning Theory</span>
+                <span class="rtag"><span class="dot"></span>Machine Learning for Networking</span>
+                <span class="rtag"><span class="dot"></span>Game Theory &amp; Mechanism Design</span>
+                <span class="rtag"><span class="dot"></span>Multi-agent Learning</span>
             </div>
         </div>
+
+        <!-- News -->
+        <div class="section">
+            <h2>Recent News</h2>
+            <ul class="news-list">
+                <li class="news-item">
+                    <span class="news-tag">Oct '25</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">IEEE TON</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Jul '25</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">ACM MobiHoc '25</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Jul '25</span>
+                    <span class="news-body">Serving as a Program Committee member of <span class="hl-red">AAAI '26</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Mar '25</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">IEEE TMC</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Jan '25</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">ICLR '25</span> (<b>Spotlight</b>, acceptance rate 5.1%).</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Jan '25</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">IEEE TON</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Dec '24</span>
+                    <span class="news-body">Invited talk at Sun Yat-Sen University.
+                        <a class="badge badge-slides" href="./hongbo_resources/Talk_1217SYSU.pdf">Slides</a>
+                    </span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Dec '24</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">INFOCOM '25</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Nov '24</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">IEEE TMC</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Jul '24</span>
+                    <span class="news-body">Successfully defended my Ph.D. dissertation.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Apr '24</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">IEEE TMC</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Apr '24</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">ISIT '24</span>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Apr '23</span>
+                    <span class="news-body">Invited talk at IWIN-FINS Lab, SJTU.
+                        <a class="badge badge-slides" href="./hongbo_resources/SJTU_Talk.pdf">Slides</a>
+                    </span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Feb '23</span>
+                    <span class="news-body">Oral presentation at AAAI '23.
+                        <a class="badge badge-slides" href="./hongbo_resources/AAAI_3044_Slides.pdf">Slides</a>
+                    </span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Nov '22</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">AAAI '23</span> (<b>Oral</b>, acceptance rate 10.8%).</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-tag">Oct '22</span>
+                    <span class="news-body">One paper accepted at <span class="hl-red">IEEE TNSE</span>.</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Awards -->
+        <div class="section">
+            <h2>Awards</h2>
+            <ul class="awards-list">
+                <li>IEEE ISIT Student Travel Grant, 2024.</li>
+                <li>SUTD PhD Fellowship, 2020.</li>
+                <li>Outstanding Graduate of Shanghai, SJTU (Top 2%), 2019.</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="section">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> li.15242@osu.edu</li>
+                <li><i class="fas fa-map-marker-alt"></i> Dreese Lab 655, 2015 Neil Ave, Columbus, OH 43210</li>
+            </ul>
+        </div>
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-</body>
+</main>
+
+</div><!-- end .page-wrapper -->
+
 <footer class="footer">
-    <div class="container">
-        <p>&copy; Created by Hongbo Li in 2024. All Rights Reserved. Last Updated in Oct 2025.</p>
-    </div>
+    <p>&copy; Hongbo Li, 2024. All Rights Reserved. Last Updated Oct 2025.</p>
 </footer>
+
+</body>
 </html>
