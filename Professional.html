@@ -3,245 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hongbo Li</title>
+    <title>Professional Services — Hongbo Li</title>
     <link rel="icon" href="https://lihongbo97.github.io/hongbo_resources/Li_logo.png">
     <link rel="shortcut icon" href="https://lihongbo97.github.io/hongbo_resources/Li_logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <style>
-        body { font-family: Arial, sans-serif; padding-top: 70px;}
-        .navbar { margin-bottom: 20px; text-align: center; margin-left: 0; position: fixed;top: 0;width: 100%; z-index: 1000;}
-        .navbar-brand { font-size: 1.5rem; }
-        .navbar-nav .nav-item { margin-right: 50px; }
-        .navbar-nav .nav-link { font-size: 1.2rem; }
-        .nav-item .nav-link {
-            position: relative;
-            display: inline-block;
-            padding: 10px 15px;
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .nav-item .nav-link:hover {
-            color: #0056b3;
-        }
-        .nav-item .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #0056b3;
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-out;
-        }
-        .nav-item .nav-link:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-        .container { display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding-right: 0; }
-        .sidebar { width: 250px; padding: 20px; border-right: 1px solid #ddd; font-size: 0.875rem; line-height: 1.2; position: fixed; height: 100%; overflow-y: auto; }
-        .sidebar img { width: 100%; border-radius: 50%; margin-bottom: 15px; }
-        .sidebar p { margin: 5px 0; }
-        .sidebar .icon-text { display: flex; align-items: center; margin-bottom: 5px; }
-        .sidebar .icon-text i { margin-right: 13px; }
-        .content { flex: 1; padding: 20px; padding-left: 290px; font-size: 1.1rem;}
-        .header { text-align: center; margin-bottom: 40px; }
-        .section { margin-bottom: 40px; }
-        .social-icons { display: flex; flex-direction: column; align-items: flex-start; }
-        .social-icons a { margin-bottom: 10px; color: #333; text-decoration: none; font-size: 0.875rem; }
-        .social-icons a:hover { color: #0056b3; }
-        .social-icons i { margin-right: 10px; }
-        .badge { font-size: 0.875rem; background-color: #1E90FF; color: #fff; padding: 0.3rem 0.5rem; border-radius: 0.25rem; }
-        .footer {
-            background-color: #f8f9fa; /* Light grey background */
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            border-top: 1px solid #eaeaea; /* Light border on top */
-            font-size: 0.875rem; /* Adjust font size as needed */
-            color: #6c757d; /* Light grey text color */
-        }
-        .footer .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .footer p {
-            margin: 0;
-        }
-        
-        /* Media query for mobile screens */
-        @media (max-width: 768px) {
-            body {
-                padding-top: 56px; /* Adjust this value based on your navbar height */
-            }
-            .navbar {
-                margin-left: 0;
-            }
-            .sidebar {
-                width: 100%;
-                position: relative;
-                height: auto;
-                border-right: none;
-                border-bottom: 1px solid #ddd;
-            }
-            .content {
-                padding-left: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand d-none d-lg-block">Hongbo Li's Homepage</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./hongbo_resources/HongboLi_CV.pdf">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Professional.html">Professional Services</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="sidebar" style="margin-top: 0;">
-            <img src="./hongbo_resources/photo1.jpg" alt="Your Name">
-            <div class="icon-text">
-                <i class="fas fa-map-marker-alt"></i>
-                <p> Columbus, OH</p>
-            </div>
-            <div class="icon-text">
-                <i class="fas fa-university"></i>
-                <p> The Ohio State University</p>
-            </div>
-            <div class="icon-text">
-                <i class="fas fa-envelope"></i>
-                <p> li.15242@osu.edu</p>
-            </div>
-            <div class="social-icons">
-                <a href="https://scholar.google.com/citations?user=tCrp2KsAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/hongbo-li/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>  Linkedin</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/LiHongbo97" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-        </div>
-        <div class="content">
-            <script>
-                window.onload = function() {
-                    window.scrollTo(0, 0);
-                };
-            </script>
-            <div id="reviewer" class="section">
-                <h2>Program Committee</h2>
-                <ul>
-                    <li><p>
-                        AAAI 2026.
-                    </p></li>
-                </ul>
-            </div>
-            <div id="reviewer" class="section">
-                <h2>Technical Reviewer</h2>
-                <ul>
-                    <li><p>
-                        IEEE Transactions on Networking (IEEE TON).
-                    </p></li>
-                    <li><p>
-                        IEEE Transactions on Mobile Computing (IEEE TMC).
-                    </p></li>
-                    <li><p>
-                        IEEE Transactions on Communications (IEEE TCOM).
-                    </p></li>
-                    <li><p>
-                        IEEE Transactions on Signal Processing (IEEE TSP).
-                    </p></li>
-                    <li><p>
-                        IEEE Transactions on Services Computing (IEEE TSC).
-                    </p></li>
-                    <li><p>
-                        IEEE Transactions on Network Science and Engineering (IEEE TNSE).
-                    </p></li>
-                    <li><p>
-                        IEEE Transactions on Vehicular Technology (IEEE TVT).
-                    </p></li>
-                    <li><p>
-                        IEEE Transactions on Parallel and Distributed Systems (IEEE TPDS).
-                    </p></li>
-                    <li><p>
-                        Journal of Artificial Intelligence Research (JAIR).
-                    </p></li>
-                    <li><p>
-                        ACM Transactions on Recommender Systems (ACM TROS).
-                    </p></li>
-                    <li><p>
-                        International Journal of Robust and Nonlinear Control.
-                    </p></li>
-                    <li><p>
-                        ICLR 2025, 2026, NeurIPS 2025, AAAI 2026.
-                    </p></li>
-                    <li><p>
-                        IEEE INFOCOM 2025, 2026, ACM MobiHoc 2022, 2024.
-                    </p></li>
-                </ul>
-            </div>
-            <div id="teaching" class="section">
-                <h2>Courses</h2>
-                <ul>
-                    <li><p>
-                      <b>Probability and Random Variables</b>, invited lecturer, graduate course, The Ohio State University,
-                    College of Engineering, Fall 2025.
-                    </p></li>
-                    <li><p>
-                      <b>Introduction to Machine Learning and Language Models</b>, lecturer, NSF REU Program, The Ohio State University, Summer 2025.
-                    </p></li>
-                    <li><p>
-                      <b>Game Theory</b>, teaching assistant, undergraduate course, Singapore University of Technology and Design,
-                    Engineering Systems and Design Pillar, Summer 2022.
-                    </p></li>
-                    <li><p>
-                        <b>Data and Business Analytics</b>, teaching assistant, undergraduate course, Singapore University of Technology
-                    and Design, Engineering Systems and Design Pillar, Spring 2022.
-                    </p></li>
-                </ul>
-            </div>
-            <div id="talk" class="section">
-                <h2>Talks</h2>
-                <ul>
-                    <li><p>
-                        <font color="RoyalBlue">[Dec 2024]</font> “Mixture-of-Transformers Learn Faster: A Theoretical Study on Classification Problems”, AI-EDGE Institute.
-                        <a class="badge badge-success" href="./hongbo_resources/Talk_1217SYSU.pdf">Slides</a>
-                    </p></li>
-                    <li><p>
-                        <font color="RoyalBlue">[Dec 2024]</font> “Theory of Mixture-of-Experts in Continual Learning”, Sun Yat-Sen University.
-                        <a class="badge badge-success" href="./hongbo_resources/Talk_1217SYSU.pdf">Slides</a>
-                    </p></li>
-                    <li><p>
-                        <font color="RoyalBlue">[Apr 2023]</font> “When Mobile Crowdsourcing Meets Congestion Games: Selective Information Disclosure”, Shanghai Jiao Tong University.
-                        <a class="badge badge-success" href="./hongbo_resources/SJTU_Talk.pdf">Slides</a>
-                    </p></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-</body>
 
-<!-- <footer class="footer">
-    <div class="container">
-        <p>&copy; Created by Hongbo Li in 2024. All Rights Reserved. Last Updated in Oct 2025.</p>
+<!-- ── TOP NAV ──────────────────────────────────────────── -->
+<nav class="topnav">
+    <a href="index.html">About</a>
+    <a href="./hongbo_resources/HongboLi_CV.pdf" target="_blank">CV</a>
+    <a href="Publications.html">Publications</a>
+    <a href="Professional.html" class="active">Professional</a>
+</nav>
+
+<div class="page-wrapper">
+
+<!-- ── SIDEBAR ──────────────────────────────────────────── -->
+<aside class="sidebar">
+    <img class="sidebar-photo" src="./hongbo_resources/photo1.jpg" alt="Hongbo Li">
+    <h2 class="sidebar-name">Hongbo Li</h2>
+    <p class="sidebar-role">Postdoctoral Scholar<br>The Ohio State University</p>
+    <hr class="sidebar-hr">
+    <ul class="sidebar-meta">
+        <li><i class="fas fa-map-marker-alt"></i> Columbus, OH</li>
+        <li><i class="fas fa-university"></i> NSF AI-EDGE Institute, OSU</li>
+        <li><i class="fas fa-envelope"></i> li.15242@osu.edu</li>
+    </ul>
+    <ul class="sidebar-links">
+        <li><a href="https://scholar.google.com/citations?user=tCrp2KsAAAAJ&hl=en" target="_blank">
+            <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/hongbo-li/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a></li>
+        <li><a href="https://github.com/LiHongbo97" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a></li>
+    </ul>
+</aside>
+
+<!-- ── MAIN ─────────────────────────────────────────────── -->
+<main class="main">
+    <div class="content">
+
+        <div class="page-title">
+            <h1>Professional Services</h1>
+            <p class="tagline">Program Committee · Reviewing · Teaching · Talks</p>
+        </div>
+
+        <!-- Program Committee -->
+        <div class="section">
+            <h2>Program Committee</h2>
+            <ul class="reviewer-conf">
+                <li><span class="conf-chip">AAAI 2026</span></li>
+            </ul>
+        </div>
+
+        <!-- Technical Reviewer -->
+        <div class="section">
+            <h2>Technical Reviewer</h2>
+
+            <p class="reviewer-subtitle">Journals</p>
+            <ul class="reviewer-grid">
+                <li>IEEE Transactions on Networking (TON)</li>
+                <li>IEEE Transactions on Mobile Computing (TMC)</li>
+                <li>IEEE Transactions on Communications (TCOM)</li>
+                <li>IEEE Transactions on Signal Processing (TSP)</li>
+                <li>IEEE Transactions on Services Computing (TSC)</li>
+                <li>IEEE Trans. on Network Science &amp; Engineering (TNSE)</li>
+                <li>IEEE Transactions on Vehicular Technology (TVT)</li>
+                <li>IEEE Trans. on Parallel &amp; Distributed Systems (TPDS)</li>
+                <li>Journal of Artificial Intelligence Research (JAIR)</li>
+                <li>ACM Trans. on Recommender Systems (TROS)</li>
+                <li>International Journal of Robust and Nonlinear Control</li>
+            </ul>
+
+            <p class="reviewer-subtitle">Conferences &amp; Workshops</p>
+            <ul class="reviewer-conf">
+                <li><span class="conf-chip">ICLR 2025</span></li>
+                <li><span class="conf-chip">ICLR 2026</span></li>
+                <li><span class="conf-chip">NeurIPS 2025</span></li>
+                <li><span class="conf-chip">AAAI 2026</span></li>
+                <li><span class="conf-chip">IEEE INFOCOM 2025</span></li>
+                <li><span class="conf-chip">IEEE INFOCOM 2026</span></li>
+                <li><span class="conf-chip">ACM MobiHoc 2022</span></li>
+                <li><span class="conf-chip">ACM MobiHoc 2024</span></li>
+            </ul>
+        </div>
+
+        <!-- Courses -->
+        <div class="section">
+            <h2>Courses</h2>
+
+            <div class="course-card">
+                <strong>Probability and Random Variables</strong>
+                <p class="course-role">Invited Lecturer</p>
+                <p class="course-meta">Graduate Course · The Ohio State University, College of Engineering · Fall 2025</p>
+            </div>
+
+            <div class="course-card">
+                <strong>Introduction to Machine Learning and Language Models</strong>
+                <p class="course-role">Lecturer</p>
+                <p class="course-meta">NSF REU Program · The Ohio State University · Summer 2025</p>
+            </div>
+
+            <div class="course-card">
+                <strong>Game Theory</strong>
+                <p class="course-role">Teaching Assistant</p>
+                <p class="course-meta">Undergraduate Course · Singapore University of Technology and Design, Engineering Systems and Design Pillar · Summer 2022</p>
+            </div>
+
+            <div class="course-card">
+                <strong>Data and Business Analytics</strong>
+                <p class="course-role">Teaching Assistant</p>
+                <p class="course-meta">Undergraduate Course · Singapore University of Technology and Design, Engineering Systems and Design Pillar · Spring 2022</p>
+            </div>
+        </div>
+
+        <!-- Talks -->
+        <div class="section">
+            <h2>Talks</h2>
+            <ul class="talks-list">
+
+                <li class="talk-entry">
+                    <span class="talk-date-tag">Dec '24</span>
+                    <span>
+                        "Mixture-of-Transformers Learn Faster: A Theoretical Study on Classification Problems" —
+                        AI-EDGE Institute, The Ohio State University.
+                        <a class="badge badge-slides" href="./hongbo_resources/Talk_1217SYSU.pdf" target="_blank">Slides</a>
+                    </span>
+                </li>
+
+                <li class="talk-entry">
+                    <span class="talk-date-tag">Dec '24</span>
+                    <span>
+                        "Theory of Mixture-of-Experts in Continual Learning" —
+                        Sun Yat-Sen University.
+                        <a class="badge badge-slides" href="./hongbo_resources/Talk_1217SYSU.pdf" target="_blank">Slides</a>
+                    </span>
+                </li>
+
+                <li class="talk-entry">
+                    <span class="talk-date-tag">Apr '23</span>
+                    <span>
+                        "When Mobile Crowdsourcing Meets Congestion Games: Selective Information Disclosure" —
+                        IWIN-FINS Lab, Shanghai Jiao Tong University.
+                        <a class="badge badge-slides" href="./hongbo_resources/SJTU_Talk.pdf" target="_blank">Slides</a>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+
     </div>
-</footer> -->
-    
+</main>
+
+</div><!-- end .page-wrapper -->
+
+<footer class="footer">
+    <p>&copy; Hongbo Li, 2024. All Rights Reserved. Last Updated Oct 2025.</p>
+</footer>
+
+</body>
 </html>
