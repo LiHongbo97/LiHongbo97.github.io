@@ -2,4 +2,4 @@
 
 Please see my personal homepage: [LiHongbo97.github.io](https://lihongbo97.github.io)
 
-Thanks to Claude Code.
+The UI is designed by Claude Code.
